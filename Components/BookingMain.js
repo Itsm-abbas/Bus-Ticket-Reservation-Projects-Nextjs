@@ -25,7 +25,7 @@ const BookingMain = () => {
               onChange={(e) => setDestination(e.target.value)}
             >
               <option value="Agriculture University">
-                Agriculture University
+                Peshawar University
               </option>
             </select>
             <select
