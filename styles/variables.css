@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+:root {
+    --lightyellow-color: hsl(42, 78%, 60%);
+    --lightyellow-hover: hsl(43, 90%, 76%);
+    --lightblue-color: #2c98f0;
+    --lightblue-hover: #50a8f0;
+    --lightblue2-color: #daedfb;
+    --lightblue3-color: #b4dffe;
+    --darkgray-color: #373737;
+    --lightgray-color: #b6b6b6;
+    --lightgray2-color: #f2f3f7;
+    --orangered-color: #ec5453;
+    --error-color: rgb(143, 34, 27);
+    --success-color: rgb(19, 170, 82);
+    --border-color: #fff;
+    --lightshadow: 0 5px 15px rgb(0 0 0 / 10%);
+    --darkshadow: 0 5px 25px rgb(0 0 0 / 30%);
+    --heading-color: #999999;
+    --heading-sm-font-size: 18px;
+    --heading-font-size: 21px;
+    --heading-lg-font-size: 30px;
+    --heading2-sm-font-size: 21px;
+    --heading2-font-size: 25px;
+    --heading2-lg-font-size: 35px;
+    --border-color: #fff;
+    --lightshadow: 0 5px 15px rgb(0 0 0 / 10%);
+    --darkshadow: 0 5px 25px rgb(0 0 0 / 30%);
+    --Quicksand-font: "Quicksand", Arial, sans-serif;
+    --Ubuntu-font: "Ubuntu", Arial, sans-serif;
+    --Roboto-font: "Roboto", Arial, sans-serif;
+    --radius: .375rem;
+    --width: 80%;
+}

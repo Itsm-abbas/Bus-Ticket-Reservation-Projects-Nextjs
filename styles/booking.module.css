@@ -1,0 +1,158 @@
+.body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.623)), url(/images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
+.booking_section {
+    font-family: var(--Quicksand-font);
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding: 7rem 0;
+}
+
+.blur {
+    filter: opacity(0);
+}
+
+.booking_form {
+    padding: 1.5rem;
+    width: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    border: 1px solid var(--lightblue-color);
+}
+
+.booking_desc {
+    width: 60%;
+    padding-left: 7rem;
+    float: right;
+}
+
+.booking_desc>h1 {
+    margin-bottom: .4rem;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.booking_desc>p {
+    margin-bottom: 5rem;
+}
+
+.elem_group {
+    margin: 10px 0;
+}
+
+
+.elem_group>label {
+    display: inline-block;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.elem_group select {
+    outline: none;
+    border-radius: 2px;
+    border: 2px solid var(--lightgray2-color);
+    box-sizing: border-box;
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--lightgray2-color);
+}
+
+.input_box {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input_box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.input_box input:focus {
+    border-color: #2c98f0;
+}
+
+.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.SubmitModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--success-color);
+    height: 4rem;
+    width: 15rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s all ease-in;
+}
+
+.showModal {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width:900px) {
+
+    .booking_section {
+        flex-direction: column-reverse;
+        width: 90%;
+        padding: 7rem 0 4rem 0;
+    }
+
+    .booking_form {
+        width: 100%;
+    }
+
+    .booking_desc {
+        width: 90%;
+        padding-left: 0;
+        float: none;
+    }
+
+    div.elem-group.inlined {
+        width: 100%;
+    }
+
+
+
+    div.elem-group.inlined input {
+        width: 100%;
+    }
+
+
+    #book_btn {
+        height: 50px;
+        width: 100%;
+        padding: 0 0;
+    }
+}

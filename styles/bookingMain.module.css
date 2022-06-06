@@ -1,0 +1,72 @@
+.booking_section {
+    font-family: var(--Quicksand-font);
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+
+.booking_section .container {
+
+    width: var(--width);
+    margin: 0 auto;
+}
+
+.booking_section .container>h1 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 38px;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.booking_section .container>div {
+    background-color: var(--lightgray2-color);
+    width: 100%;
+    padding: 1.5rem 2rem;
+    margin-top: 3rem;
+}
+
+.booking_section .container>div form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+
+.booking_section .container select {
+    cursor: pointer;
+    height: 3rem;
+    font-size: 15px;
+    padding: 11.2px 15.36px;
+    outline: none;
+}
+
+.booking_section .container select:focus {
+    border: 1px solid var(--lightblue-color);
+}
+
+.book_btn {
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: var(--radius);
+}
+
+.booking_section .container #departure_date {
+    height: 3rem;
+    font-size: 15px;
+    padding: 11.2px 15.36px;
+    outline: none;
+}
+
+.booking_section .container #departure_date:focus {
+    border: 1px solid var(--lightblue-color);
+
+}
+
+@media screen and (max-width:768px) {
+    .booking_section .container>div form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,192 @@
+.available_seats_section {
+    font-family: var(--Quicksand-font);
+    background-color: var(--lightgray2-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.623)),
+        url(/images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s all ease;
+    padding-top: 7rem;
+}
+
+.available_seats_section.blur {
+    filter: blur(10px);
+}
+
+.available_seats_section>h1 {
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.heading {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.available_bus_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 1rem 4rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 0px 54px -7px rgba(0, 0, 0, 0.75);
+}
+
+
+.book_btn {
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    background-color: var(--lightblue-color);
+    color: white;
+    transition: .4s all ease;
+}
+
+.book_btn:hover {
+    background-color: rgb(14, 127, 202);
+}
+
+.seats_wrapper {
+    font-family: var(--Quicksand-font);
+    width: 50%;
+    height: auto;
+    padding: 3rem 0;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s all ease;
+}
+
+.seats_wrapper>h2 {
+    margin-bottom: 1rem;
+}
+
+.seats_wrapper.show {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.seatsplan {
+    width: 40%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    place-content: center;
+    grid-gap: .6rem;
+}
+
+.seatsplan>button {
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--lightblue-color);
+    font-size: 13px;
+    border-radius: 10px 10px 5px 5px;
+    width: 2rem;
+    height: 2rem;
+    transition: .3s all ease-in-out;
+}
+
+.seatsplan>button:hover {
+    background-color: red;
+}
+
+
+
+#cancel_btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 10px 10px 5px 5px;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    background: var(--lightblue-color);
+    border: none;
+    color: white;
+    transition: .3s all ease-in-out;
+}
+
+#cancel_btn:hover {
+    background-color: var(--lightblue-hover);
+}
+
+.seatPlanBtn {
+    cursor: pointer;
+    background-color: var(--lightblue-color);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    transition: .3s all ease-in-out;
+    width: 40%;
+}
+
+.seatPlanBtn:hover {
+    background-color: var(--lightblue-hover);
+}
+
+@media screen and (max-width:768px) {
+    .heading {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .available_bus_wrapper {
+        padding: 1rem 2rem;
+        width: 80%;
+        max-width: 80%;
+        flex-direction: column;
+    }
+
+    .book_btn {
+        margin-top: 1rem;
+    }
+
+    .seats_wrapper {
+        width: 80%;
+        height: auto;
+        padding: 3rem 0;
+        border-radius: 1rem;
+        background-color: black;
+        color: white;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .5s all ease;
+    }
+
+    .seatsplan {
+        width: 65%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: .6rem;
+    }
+}

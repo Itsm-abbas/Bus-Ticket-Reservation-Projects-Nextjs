@@ -1,0 +1,86 @@
+/* Guidline Section */
+.guideline_section {
+    padding: 5rem 0;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    font-family: var(--Ubuntu-font);
+}
+
+.guideline_wrapper {
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.guideline_wrapper>div>h1 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 38px;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.guideline_boxes_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+.guideline_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+}
+
+.guideline_box>i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    padding: .6rem;
+    background-color: white;
+    border-radius: var(--radius);
+}
+
+.guideline_box>h4 {
+    margin-top: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+
+
+.guideline_1 {
+    background-color: var(--lightyellow-color);
+}
+
+.guideline_1 i {
+    color: var(--lightyellow-color);
+}
+
+.guideline_2 {
+    background-color: var(--success-color);
+}
+
+.guideline_2 i {
+    color: var(--success-color);
+}
+
+.guideline_3 {
+    background-color: var(--lightblue-color);
+}
+
+.guideline_3 i {
+    color: var(--lightblue-color);
+}
+
+@media screen and (max-width:765px) {
+    .guideline_boxes_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

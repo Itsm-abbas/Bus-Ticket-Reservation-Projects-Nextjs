@@ -1,0 +1,123 @@
+/* Why choose us Section */
+.why_us_section {
+    background-color: rgb(241, 240, 240);
+    max-width: 100%;
+    font-family: var(--Ubuntu-font);
+    height: auto;
+}
+
+.why_us_wrapper {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    padding: 4rem 0;
+}
+
+/* Column 1 */
+.why_us_wrapper .col_1 {
+    width: 40%;
+    margin-right: 6rem;
+}
+
+.why_us_wrapper .col_1>h1 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.why_us_wrapper .col_1>p {
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--darkgray-color);
+
+}
+
+
+.why_us_wrapper .row {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem 1rem 0;
+}
+
+.why_us_wrapper .row .icon_wrapper {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-right: 1.5rem;
+    box-shadow: var(--lightshadow);
+    border-radius: var(--radius);
+    min-width: 4.4rem;
+}
+
+.why_us_wrapper .row .icon_wrapper i {
+    color: var(--lightblue-color);
+    font-size: 1.9rem;
+}
+
+.why_us_wrapper .row .content_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.why_us_wrapper .row .content_wrapper h3 {
+    margin-bottom: .4rem;
+    letter-spacing: 1px;
+}
+
+.why_us_wrapper .row .content_wrapper p {
+    font-size: .8rem;
+    color: gray;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: capitalize;
+}
+
+.col_1 .book_btn_sm {
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--lightblue-color);
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.col_1 .book_btn_sm:hover {
+    background-color: var(--lightblue-hover);
+}
+
+/* Col 2 */
+.why_us_section .why_us_wrapper .col_2 {
+    background: url(/images/main.jpg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 60%;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width:765px) {
+    .why_us_wrapper {
+        flex-direction: column;
+    }
+
+    .why_us_wrapper .col_1 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .why_us_wrapper .col_1>h1 {
+        font-size: 2rem;
+    }
+
+    .why_us_section .why_us_wrapper .col_2 {
+        display: none;
+    }
+}
