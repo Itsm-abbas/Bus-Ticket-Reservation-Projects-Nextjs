@@ -57,6 +57,7 @@
     font-size: 15px;
     padding: 11.2px 15.36px;
     outline: none;
+    width: 100%;
 }
 
 .booking_section .container #departure_date:focus {
