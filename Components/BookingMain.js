@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import style from "../styles/bookingMain.module.css";
 import { useRouter } from "next/router";
 const BookingMain = () => {
-  const [destination, setDestination] = useState("Agriculture University");
+  const [destination, setDestination] = useState("Peshawar University");
   const [arrival, setArrival] = useState("");
   const [departureTDate, setDepartureDate] = useState("");
   const router = useRouter();
@@ -24,9 +24,7 @@ const BookingMain = () => {
               id="departure"
               onChange={(e) => setDestination(e.target.value)}
             >
-              <option value="Agriculture University">
-                Peshawar University
-              </option>
+              <option value="Peshawar University">Peshawar University</option>
             </select>
             <select
               required="required"
