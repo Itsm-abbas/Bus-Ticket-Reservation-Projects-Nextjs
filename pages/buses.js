@@ -48,12 +48,18 @@ const Buses = () => {
               <div className={style.available_bus_wrapper}>
                 <div>
                   <div>
-                    Type: <b>Luxury</b>
-                    <br />
-                    Total Seats: <b className="total_seats">40</b>
-                    <hr />
-                    Date : <b id="bus_date">{params.departureDate}</b> <br />
-                    Time: <b id="bus_time">{element}</b>
+                    <p>
+                      Type: <b>Luxury</b>
+                    </p>
+                    <p>
+                      Total Seats: <b>{totalseats}</b>
+                    </p>
+                    <p>
+                      Date : <b>{params.departureDate}</b>
+                    </p>
+                    <p>
+                      Time: <b>{element}</b>
+                    </p>
                   </div>
                 </div>
                 <div>

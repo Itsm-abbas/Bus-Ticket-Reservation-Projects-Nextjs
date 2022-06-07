@@ -42,6 +42,10 @@
     box-shadow: 2px 0px 54px -7px rgba(0, 0, 0, 0.75);
 }
 
+.available_bus_wrapper>div>div {
+    display: flex;
+    flex-direction: column;
+}
 
 .book_btn {
     border: none;
@@ -155,9 +159,17 @@
 
     .available_bus_wrapper {
         padding: 1rem 2rem;
-        width: 80%;
-        max-width: 80%;
+        width: 90%;
+        max-width: 90%;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .available_bus_wrapper>div>div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: .5rem 3rem;
     }
 
     .book_btn {
