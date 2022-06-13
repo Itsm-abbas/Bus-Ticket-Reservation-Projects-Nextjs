@@ -145,3 +145,13 @@ abbr {
   justify-content: space-between;
   margin: 20px 0 12px 0;
 }
+
+@media screen and (max-width:500px) {
+  .user_details {
+    flex-direction: column;
+  }
+
+  .input_box_col_2 {
+    width: 100% !important;
+  }
+}
